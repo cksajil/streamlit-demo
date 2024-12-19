@@ -5,7 +5,7 @@ import numpy as np
 
 st.title("Flower Classification App")
 
-filename = "lr_model.pkl"
+file_name = "lr_model.pkl"
 with open(file_name , 'rb') as f:
     lr_model = pickle.load(f)
 
