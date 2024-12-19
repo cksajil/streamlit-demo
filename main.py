@@ -1,4 +1,4 @@
-import joblib
+import pickle
 import streamlit as st
 from os import path
 import numpy as np
@@ -6,7 +6,7 @@ import numpy as np
 st.title("Flower Classification App")
 
 filename = "lr_model.pkl"
-lr_model = joblib.load(path.join("model", filename))
+lr_model = pickle.load(path.join("model", filename))
 
 sl = st.number_input("Insert a sepel length")
 sw = st.number_input("Insert a sepel width")
