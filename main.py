@@ -17,3 +17,6 @@ pw = st.number_input("Insert a petal width")
 if st.button("Predict"):
     pred = lr_model.predict(np.array([[sl, sw, pl, pw]]))
     st.write("The flower is :", pred[0])
+
+# pip install streamlit numpy scikit-learn
+# python -m streamlit run main.py
